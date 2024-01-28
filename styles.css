@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+
+.iphone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0f0f0;
+}
+
+.iphone {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 420px;
+    width: 100%;
+}
+.contact-banner{
+    padding-bottom: 23px;
+    padding-top:3px;
+    background-color:#500000;
+    height:300px;
+}
+
+.chat-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px; /* Space for input container */
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom: 0;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-sizing: border-box; /* Add this line */
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.message.user-message {
+    text-align: right;
+}
+
+.message {
+    margin-bottom: 10px; /* Adjust the value to change the spacing */
+    border-radius: 8px;
+    display: block;
+    max-width: 70%; /* Limit the width of the message bubble */
+    padding: 8px; /* Add padding to create space within the message bubble */
+}
+
+.message.user-message {
+    margin-left: auto; /* Push user messages to the right */
+    background-color: #500000; 
+    color: white;
+}
+
+.message.bot-message {
+    background-color: #500000; /* Blue background for bot messages */
+    color: white;
+}
+
+.chat-box {
+    overflow-y: auto;
+    max-height: 610px; /* Adjust the maximum height of the chat box as needed, 610px if showing in full screen*/
+
+}
+
+#contact-photo{
+    height: 60px;
+    width: auto;
+    margin-top: 40%;
+    margin-left: 10%;
+    border-radius: 50%; /* Makes the container round */
+    overflow: hidden; /* Ensures the image stays within the rounded container */
+
+}
+
+
